@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+h1 {
+  color: aqua;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+h1 span {
+  font-size: 1rem;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #4bb2d5;
+}
+header {
+  background-color: rgb(102, 134, 231);
+  padding: 1px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+footer {
+  float: left;
+  width: 100%;
+  background-color: rgb(102, 134, 231);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+#WorkActivity>section {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+section {
+    display: block;
+}
+nav:not(.topnav) {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  clear: both;
+}
+.article :hover {
+  background-color: rgb(103, 5, 5);
+}
+
+.topnav a:hover {
+  background-color: rgb(102, 134, 231);
+  color: black;
+}
+* {
+    box-sizing: border-box;
+}
+.topnav a {
+    overflow: hidden;
+  float: left;
+  display: block;
+  color: #f8f8f8;
+  background-color: rgb(72, 72, 211);
+  text-align: center;
+  padding: 10px;
+  
+  text-decoration: dashed;
+}
+aside {
+  float: right;
+  background-color: #4bb2d5;
+  width: 35%;
+}
+figure {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+aside img {
+  padding: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
