@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 h1 {
   color: aqua;
@@ -10,11 +10,14 @@ h1 {
 h1 span {
   font-size: 1rem;
 }
-main{
+main {
   padding: 0px 20px;
-}
-.row{
   display: flex;
+}
+
+.row {
+  display: flex;
+  flex: 100%;
   background-color: rgb(114, 197, 227);
 }
 article {
@@ -56,14 +59,14 @@ section:after {
   background-color: rgb(102, 134, 231);
   color: black;
 }
-.fakeimg{
+.fakeimg {
   background: #ddd;
   width: 100%;
   padding: 30px;
-  height:200px;
+  height: 200px;
   text-align: center;
 }
-nav{
+nav {
   display: flex;
   flex-flow: row nowrap;
   background-color: #331;
@@ -72,25 +75,25 @@ nav{
 
 .topnav a {
   width: 100%;
-  background-color: rgb(154, 173, 228);;
+  background-color: rgb(154, 173, 228);
   text-decoration: dashed;
   text-align: center;
   float: center;
 }
 aside {
-  padding-left:200px;
+  padding-left: auto;
   border-left-color: 5px dotted rgb(204, 102, 102);
   flex-flow: row nowrap;
   display: flex;
-  flex:100%;
+  flex: 100%;
   width: 30%;
 }
 
-h1{
+h1 {
   padding-right: 30px;
 }
 
-@media screen and (min-width: 400px) {
+/*@media screen and (min-width: 400px) {
   body {
     background-color: lightgreen;
   }
@@ -99,5 +102,14 @@ h1{
 @media screen and (min-width: 800px) {
   body {
     background-color: lavender;
+  }
+}*/
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+    height: auto;
+  }
+  main{
+    flex-direction: column;
   }
 }
