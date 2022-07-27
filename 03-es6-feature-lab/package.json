@@ -1,0 +1,9 @@
+{
+  "name": "03-es6-feature-lab",
+  "version": "1.0.0",
+  "description": "ECMA demo9",
+  "main": "index.js",
+  "repository": "https://github.com/niki4a233/react-native-typescript-academy.git",
+  "author": "Nikolay Ivanov",
+  "license": "Apache-2.0"
+}
