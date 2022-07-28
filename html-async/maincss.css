@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  
+  font-size: 270px;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  
+}
+h1 {
+  color: aqua;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+h1 span {
+  font-size: 1rem;
+}
+main {
+  padding: 0px 20px;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex: 100%;
+  background-color: rgb(114, 197, 227);
+}
+article:hover{
+  background-color: #a28cdd;
+}
+article {
+  overflow: hidden;
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 110px;
+  width:50%;
+  background-color: #4bb2d5;
+}
+header {
+  
+  background-color: rgb(102, 134, 231);
+  padding: 60px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-style: italic;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  background-color: rgb(102, 134, 231);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  clear: both;
+}
+.article :hover {
+  background-color: rgb(103, 5, 5);
+}
+
+ a:hover {
+  background-color: rgb(102, 134, 231);
+  color: black;
+}
+.fakeimg {
+  background: #ddd;
+  width: 100%;
+  padding: 30px;
+  height: 200px;
+  text-align: center;
+}
+nav {
+  text-align:center;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: rgb(102, 134, 231);
+  height: 30px 30px 30px 30px;
+}
+form{
+  padding:10px
+}
+a{
+  margin: 10px;
+  width: 40%;
+}
+#links{
+align-items: center;
+padding: 10px;
+}
+div#results{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topnav a {
+  width: 100%;
+  background-color: rgb(154, 173, 228);
+  text-decoration: dashed;
+  text-align: center;
+  float: center;
+}
+aside {
+  padding-left: auto;
+  border-left-color: 5px dotted rgb(204, 102, 102);
+  flex-flow: row nowrap;
+  display: flex;
+  flex: 100%;
+  width: 30%;
+}
+
+h1 {
+  padding-right: 30px;
+}
+
+/*@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}*/
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+    height: auto;
+  }
+  main{
+    flex-direction: column;
+  }
+}
+@media (min-width: 1500px) {
+  article {
+    width: 33%;
+    height: auto;
+  }
+ 
+}

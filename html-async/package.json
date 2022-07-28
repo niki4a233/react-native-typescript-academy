@@ -1,0 +1,14 @@
+{
+  "name": "HTML-CSS-LEARN",
+  "version": "1.0.0",
+  "description": "HTML,CSS and JS intro",
+  "main": "index.js",
+  "author": "Nikolay Ivanov",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server"
+  }
+}
