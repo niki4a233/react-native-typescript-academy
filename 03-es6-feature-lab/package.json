@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/niki4a233/react-native-typescript-academy.git",
   "author": "Nikolay Ivanov",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

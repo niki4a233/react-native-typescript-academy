@@ -1,4 +1,4 @@
-const myIterable = (from = 0 , to = 10, step = i) => ({
+const myIterable = (from = 0 , to = 10, step =1) => ({
     [Symbol.iterator]() {
         let i = from - step;
         return{
@@ -7,8 +7,8 @@ const myIterable = (from = 0 , to = 10, step = i) => ({
              i+=step;
                return
                      {
-                  value:i,
-                  done: i >= to
+                      value:i;
+                      done:i>= to
                      }
                    }
                }
@@ -16,9 +16,9 @@ const myIterable = (from = 0 , to = 10, step = i) => ({
             }
         })
 
-for (const e of myIterable){
+for (const e of myIterable()){
     console.log(e);
 }
-for (const e of myIterable){
+for (const e of myIterable()){
     console.log(e);
 }
