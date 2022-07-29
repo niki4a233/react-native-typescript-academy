@@ -1,0 +1,15 @@
+async function* numberGen() {
+    let i=0;
+    while ( i< 10){
+       yield new Promise((resolve,reject)=> {
+       setTimeout(resolve, i*1000, i)})
+       
+    }
+}
+
+(async ()=> {
+
+for await(const num of numberGen()){
+    console.log(num);
+}
+} ) (); //
