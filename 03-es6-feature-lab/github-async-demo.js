@@ -28,6 +28,7 @@ async function init() {
       userDiv.innerHTML = `
           <figure><img src="${u.pictureUrl}">
           <figcaption> ${u.username}</figcaption>
+          <figcaption id="text"> Followers: ${u.followers}</figcaption>
           </figure>
           `;
 
