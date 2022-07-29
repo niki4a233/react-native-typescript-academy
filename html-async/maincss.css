@@ -30,6 +30,12 @@ main {
 article:hover{
   background-color: #a28cdd;
 }
+nav a{
+  padding: 15px;
+}
+nav a:hover{
+  background-color: #4bb2d5;
+}
 article {
   overflow: hidden;
   font-size: 1.2rem;

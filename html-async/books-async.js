@@ -19,7 +19,7 @@ function generateBook(book) {
 async function init() {
   try {
     const resultsElem = document.getElementById(`results`);
-    const booksResp = await fetch("https://www.googleapis.com/books/v1/volumes?q=react+native&maxResults=10");
+    const booksResp = await fetch("https://www.googleapis.com/books/v1/volumes?q=react+native&maxResults=12");
     const books = await booksResp.json();
     books.items.forEach((element) => {
       resultsElem.appendChild(generateBook(element));
