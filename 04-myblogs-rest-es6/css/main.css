@@ -1,0 +1,15 @@
+*{
+
+    box-sizing: border-box;
+}
+
+#errors div {
+padding: 5px 20px;
+border: 1px solid red;
+background-color: rgb(240, 190, 200);
+border-radius: 5px;
+text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
