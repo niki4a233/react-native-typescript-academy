@@ -1,0 +1,53 @@
+GET http://localhost:3000/posts HTTP/1.1
+
+###
+
+GET http://localhost:3000/posts/1 HTTP/1.1
+
+###
+
+POST http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+
+{
+
+  "title": "using REST client",
+  "content": "REST client is easy....",
+  "tags": [
+    "rest-client",
+    "rest",
+    "http",
+    "crud"
+  ],
+  "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+  "authorId": 1
+}
+
+###
+
+
+PUT http://localhost:3000/posts/3 HTTP/1.1
+content-type: application/json
+
+{
+   "id": 1,
+  "title": "REST client advanced giga",
+  "content": "REST client is relatively easy....",
+  "tags": [
+    "rest-client",
+    "rest",
+    "http",
+    "easy"
+  ],
+  "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+  "authorId": 1
+}
+
+###
+
+DELETE http://localhost:3000/posts/3 HTTP/1.1
+
+###
+
+
+PATCH http://localhost:3000/posts/3 HTTP/1.1

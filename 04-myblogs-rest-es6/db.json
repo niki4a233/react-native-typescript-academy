@@ -1,0 +1,163 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json.server",
+      "content": "Json server is easy...",
+      "tags": [
+        "json.server",
+        "rest",
+        "api"
+      ],
+      "imageUrl": "https://community.wia.io/d/31-breaking-changes-in-arduinojson-6-0",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Classes in ES6",
+      "content": "Class syntax in ES6 is very neat...",
+      "tags": [
+        "javascript",
+        "es6",
+        "class"
+      ],
+      "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1400%2F1*iE6rRpFFrNDTaIf6Cyexpg.jpeg&imgrefurl=https%3A%2F%2Fkoukia.ca%2Fclasses-inheritance-and-static-members-in-javascript-es6-b84e09eb7dd9&tbnid=uPPZ6SC6CoBKIM&vet=12ahUKEwi7y6j3_J35AhWM_7sIHQv7Ad4QMygfegUIARCHAg..i&docid=MyZTPKHnsK1wUM&w=1280&h=654&q=es6%20classes&client=safari&ved=2ahUKEwi7y6j3_J35AhWM_7sIHQv7Ad4QMygfegUIARCHAg",
+      "authorId": 1
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 4
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 5
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 6
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 7
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 8
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 9
+    },
+    {
+      "title": "using REST client",
+      "content": "REST client is easy....",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 10
+    },
+    {
+      "title": "Async await",
+      "content": "Async and await syntax is easy",
+      "tags": [
+        "rest-client",
+        "rest",
+        "http",
+        "crud"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 11
+    },
+    {
+      "title": "Promises vs Async",
+      "content": "Async syntax may look easier",
+      "tags": [
+        "async",
+        "promises",
+        "await",
+        "promise",
+        "es6"
+      ],
+      "imageUrl": "https://marketplace.visualstudio.com/items?itemName=humao.rest-client",
+      "authorId": 1,
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "john",
+      "password": "john123",
+      "role": "ADMIN"
+    }
+  ]
+}

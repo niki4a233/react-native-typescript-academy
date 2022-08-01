@@ -1,0 +1,17 @@
+{
+  "name": "04-myblogs-rest-es6",
+  "version": "1.0.0",
+  "description": "REST, HTTP, json-server with es6, web client demo",
+  "main": "index.js",
+  "repository": "https://github.com/niki4a233/react-native-typescript-academy.git",
+  "author": "Nikolay Ivanov",
+  "license": "Apache-2.0",
+  "scripts":{
+    "api":"json-server db.json --routes routes.json",
+    "start":"lite-server"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "lite-server": "^2.6.1"
+  }
+}
