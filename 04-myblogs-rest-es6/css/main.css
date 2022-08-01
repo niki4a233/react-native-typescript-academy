@@ -13,3 +13,12 @@ text-align: center;
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.card-image image{
+ width: 50px;
+}
+div.card-image{
+    height: 300px;
+}
+article.card{
+    margin: 15px;
+}

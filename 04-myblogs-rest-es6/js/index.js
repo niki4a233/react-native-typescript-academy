@@ -1,12 +1,14 @@
 import { getAllPosts } from "./blogs-api-client.js";
+import "./materialize-helpers.js"
 const postSection = document.getElementById("posts");
+const errorsDiv = document.getElementById("errors");
 
 async function init() {
   try {
     const allPosts = await getAllPosts();
     showPosts(allPosts);
   } catch (err) {
-    errorsDiv.append = err;
+    showError(err);
   }
 }
 
@@ -16,20 +18,31 @@ export function showPosts(posts) {
 
 export function showError(err) {
   errorsDiv.innerHTML = `
- <div>${err}</div>`;
+ <div>${err}</div>
+ `;
 }
 export function addPost(post) {
   const postElem = document.createElement(`article`);
-  postElem.innerHTML = `
-<h3 class="post-title">${post.title}</h3>
-<img class="post-img">src="${post.imageUrl}"</img>
-<div class="post-content">
-<div class="post-metadata">Author: ${post.authorId}, Tags: ${post.tags.join(
-    ` ,`
-  )}</div>
-<div class="post-text">${post.content}</div>
+  postElem.className = "card col s12 m4";
+  postElem.innerHTML = `  <div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="${post.imageUrl}">
+  </div>    
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">${
+      post.title
+    }<i class="material-icons right">more_vert</i></span>
+    <p><a href="#">${post.content}</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">${
+      post.title
+    }<i class="material-icons right">close</i></span>
+    <p> ${post.content}, 
+   -- Tags: ${post.tags ? post.tags.join(` ,`) : 'no tags'}</p>
+  </div>
 </div>
 `;
-  postSection.insertAdjacentElement("beforend", postElem);
+  postSection.insertAdjacentElement("beforeend", postElem);
 }
-init();
+init()
