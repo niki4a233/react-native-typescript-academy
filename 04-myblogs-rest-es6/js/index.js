@@ -89,5 +89,11 @@ export function deletePost(postId) {
   article.remove();
   deleteThePost(article);
 }
+export function editPost(postId) {
+  const article = document.getElementById(postId);
+  article.remove();
+  deleteThePost(article);
+}
+
 
 init()

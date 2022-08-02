@@ -22,9 +22,33 @@ export async function addNewPost(post) {
   
   
   
-  
-  
+export async function editPost(post) {
+    try {
+    const response = await fetch(`${API_BASE_URL}/${post.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(post)
+    });
+    if(postResp.status >= 400) {
+      return Promise.reject(postResp.body);
+  }
+  return postResp.json();
+  } catch(err) {
+  return Promise.reject(err);
+  }
+  }
+  function updatePost(_posts) {
+    const [posts] = useState({
+      id: "",
+      title: "",
+      tag: "",
+      content:""
+      
+    });}
  
+
   export async function deleteThePost(post) {
       try {
           const postResp = await fetch(`${API_BASE_URL}/${post.id}`, {
