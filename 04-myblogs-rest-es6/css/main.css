@@ -1,24 +1,29 @@
-*{
-
+* {
     box-sizing: border-box;
 }
 
-#errors div {
-padding: 5px 20px;
-border: 1px solid red;
-background-color: rgb(240, 190, 200);
-border-radius: 5px;
-text-align: center;
-}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.card-image image{
- width: 50px;
+
+#errors div {
+    padding: 5px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: rgb(252, 230, 230);
+    color: red;
+    text-align: center;
 }
-div.card-image{
-    height: 300px;
-}
-article.card{
+
+.card {
     margin: 15px;
+}
+
+div.card-image {
+    height: 300px;
+    padding: 20px;
+}
+
+.card-image image {
+    width: 90%;
 }
