@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoogleBooks</title>
-    <link rel="stylesheet" href="maincss.css">
-    <script src="books-async.js" defer></script>
-</head>
-<body>
-
-   <header> Google Books</header>
-   <nav class="topnav">
-    <div id="links">
-
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    </div>
-    <form action="/form/submit" method="GET"> 
-        <input type="text" name="text" class="search" placeholder="Search here!">
-        <input type="submit" name="submit" class="submit" value="Search">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/eef30128c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Books Search</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css" />
+    <script src="dist/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <header><h1>Google Books</h1></header>
+    <nav class="topnav">
+      <ul>
+        <li><button>Home</button></li>
+        <li><button>Favorites</button></li>
+      </ul>
+      <form id="search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search.."
+          name="search"
+        />
+        <button type="submit" class="submit" id="form-submit">
+          <i class="fa fa-search"></i>
+        </button>
       </form>
-</nav>
-   <div id="results"></div>
-    <footer>All rights reserved</footer>
-</body>
+    </nav>
+    <section id="page-content">
+      <main class="main-content" id="main"></main>
+
+      <aside id="favorites-aside">
+        <h3></h3>
+        <section id="favorites-section">
+          <article>
+            <section class="image">
+              <img src="${book.volumeInfo.imageLinks.thumbnail}" alt="" />
+            </section>
+            <section class="content">
+              <section class="content-title">
+                <h5></h5>
+                <button type="click" class="favorite" id="favorite-${book.id}">
+                    <i class="fa-thin fa-alien"></i>
+                </button>
+              </section>
+              <h6></h6>
+              <p></p>
+            </section>
+          </article>
+          <article>
+            <section class="image">
+              <img src="${book.volumeInfo.imageLinks.thumbnail}" alt="" />
+            </section>
+            <section class="content">
+              <section class="content-title">
+                <h5  ${ book.volumeInfo.title }></h5>
+                <button type="click" class="favorite" id="favorite-${book.id}">
+                    <i class="fa-thin fa-alien"></i>
+                </button>
+              </section>
+              <h6></h6>
+              <p></p>
+            </section>
+          </article>
+          <article>
+            <section class="image">
+              <img src="${book.volumeInfo.imageLinks.thumbnail}" alt="" />
+            </section>
+            <section class="content">
+              <section class="content-title">
+                <h5 ${ book.volumeInfo.title }></h5>
+                <button type="click" class="favorite" id="favorite-${book.id}">
+                    <i class="fa-thin fa-alien"></i>
+                </button>
+              </section>
+              <h6 ${ book.volumeInfo.title }></h6>
+              <p></p>
+            </section>
+          </article>
+          
+        </section>
+      </aside>
+    </section>
+
+    <footer>
+      <h2></h2>
+    </footer>
+  </body>
 </html>
