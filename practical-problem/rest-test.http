@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/users/3 HTTP/1.1
+
+###
+
+
+
+
+###
+
+PUT http://localhost:3000/api/users/3 HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "username":"nikolay",
+    "password":"123456",
+    "content": "REST Client is relatively easy ...",
+    
+    "imageUrl": "https://humao.gallerycdn.vsassets.io/extensions/humao/rest-client/0.25.0/1655829100763/Microsoft.VisualStudio.Services.Icons.Default",
+    "id": 1
+}
+
+###
+
+PATCH http://localhost:3000/users/3 HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "username": "trading212"
+}
+
+###
+
+DELETE http://localhost:3000/users/4 HTTP/1.1
