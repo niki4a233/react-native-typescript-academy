@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "niki4a233",
+      "password": "Niki_232311",
+      "firstName": "Nikolay ",
+      "lastName": "Ivanov",
+      "gender": "male",
+      "role": "ADMIN",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Male_Blue.png/600px-Male_Blue.png",
+      "description": "I am Nikolay Ivanov and i am inter front-end dev in Trading 212. If you are reading that at the moment i am making my first project-exam.",
+      "status": "ACTIVE",
+      "id":"1"
+    }
+  ]
+}

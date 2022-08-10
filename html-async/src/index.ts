@@ -1,4 +1,7 @@
-import { favoriteBooksAPI, FavoriteBooksApiClientImpl } from "./favorite-books-client.js";
+import {
+  favoriteBooksAPI,
+  FavoriteBooksApiClientImpl,
+} from "./favorite-books-client.js";
 import { ApiBook, BooksResponse } from "./google-books-api-types.js";
 
 const searchForm = document.getElementById("search") as HTMLFormElement;
@@ -35,29 +38,26 @@ class BookController {
     ) as HTMLButtonElement;
     btn.addEventListener("click", () => this.deleteFromFavorites(book));
   }
-  async isFavorite(book: ApiBook){
-    const findBook=await favoriteBooksAPI.getAllFavorites() as ApiBook[];
-    
-      for(const bk of findBook){
-        if(bk.id === book.id){
-            return true;
-        }
-      }
-      return false;
-    }
-  async makeFavorite(book: ApiBook) {
-    try{
+  async isFavorite(book: ApiBook) {
+    const findBook = (await favoriteBooksAPI.getAllFavorites()) as ApiBook[];
 
+    for (const bk of findBook) {
+      if (bk.id === book.id) {
+        return true;
+      }
+    }
+    return false;
+  }
+  async makeFavorite(book: ApiBook) {
+    try {
       if (await this.isFavorite(book)) {
         this.deleteFromFavorites(book);
       } else {
         await favoriteBooksAPI.addToFavorite(book);
         this.addBookToFavorite(book);
       }
-    }
-    catch(err){
+    } catch (err) {
       console.log(err as string);
-      
     }
   }
   async deleteFromFavorites(book: ApiBook) {
@@ -87,7 +87,9 @@ class BookController {
     }</h5><button type="click" class="favorite" id="${
       dest === "main" ? "favorite" : "delete"
     }-${book.id}">
-          <i class="fa-thin fa-alien"-${dest === "main" ? "star" : "trash"}"></i>
+          <i class="fa-thin fa-alien"-${
+            dest === "main" ? "star" : "trash"
+          }"></i>
         </button>
      </section>
     <h6>Autors: ${book.volumeInfo.authors}</h6>
@@ -150,8 +152,8 @@ export function handleSubmit(event: SubmitEvent) {
 
   mainDiv.innerHTML = "";
   searchForm.reset();
-  const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeValue}&maxResults=9`;
-  bookControl.fetchBooks(url);
+  const URL = `https://www.googleapis.com/books/v1/volumes?q=${encodeValue}&maxResults=9`;
+  bookControl.fetchBooks(URL);
 }
 
 // async function searchBooks(url: string) {

@@ -1,4 +1,8 @@
-import { Post } from "./posts";
+
+export enum Roles {
+    USER, ADMIN
+}
+import { User } from "./users";
 import { Optional } from "./shared-types";
 
 export type ValidationConfig<T> = {
@@ -32,9 +36,9 @@ export type Validator = (value: string, field: string) => void;
 
 export type ValidatorFactory = (...args: any) => Validator
 
-type PostValidationConfig = ValidationConfig<Post>
+type UserValidationConfig = ValidationConfig<User>
 
-type PostValidationResult = ValidationResult<Post>
+type UserValidationResult = ValidationResult<User>
 
 
 // Standad validators
@@ -57,4 +61,5 @@ export class Validators {
         }
     }
 }
+
 

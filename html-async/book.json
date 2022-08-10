@@ -1,0 +1,381 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 490,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "0DidDwAAQBAJ",
+        "etag": "PbV9kFZCRnI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/0DidDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React Native for Mobile Development",
+          "subtitle": "Harness the Power of React Native to Create Stunning iOS and Android Applications",
+          "authors": [
+            "Akshat Paul",
+            "Abhishek Nalwaya"
+          ],
+          "publisher": "Apress",
+          "publishedDate": "2019-06-12",
+          "description": "Develop native iOS and Android apps with ease using React Native. Learn by doing through an example-driven approach, and have a substantial running app at the end of each chapter. This second edition is fully updated to include ES7 (ECMAScript 7), the latest version of React Native (including Redux), and development on Android. You will start by setting up React Native and exploring the anatomy of React Native apps. You'll then move on to Redux data flow, how it differs from flux, and how you can include it in your React Native project to solve state management differently and efficiently. You will also learn how to boost your development by including popular packages developed by the React Native community that will help you write less; do more. Finally, you'll learn to how write test cases using Jest and submit your application to the App Store. React Native challenges the status quo of native iOS and Android development with revolutionary components, asynchronous execution, unique methods for touch handling, and much more. This book reveals the the path-breaking concepts of React.js and acquaints you with the React way of thinking so you can learn to create stunning user interfaces. What You'll Learn Build stunning iOS and Android applications Understand the Redux design pattern and use it in your project Interact with iOS and android device capabilities such as addressbook, camera, GPS and more with your apps Test and launch your application to the App StoreWho This Book Is For Anyone with JavaScript experience who wants to build native mobile applications but dreads the thought of programming in Objective-C or Java. Developers who have experience with JavaScript but are new or not acquainted to React Native or ReactJS.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781484244548"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1484244540"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 237,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=0DidDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=0DidDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=0DidDwAAQBAJ&printsec=frontcover&dq=react+native&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=0DidDwAAQBAJ&dq=react+native&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/React_Native_for_Mobile_Development.html?hl=&id=0DidDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "BG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "BG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/React_Native_for_Mobile_Development-sample-epub.acsm?id=0DidDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/React_Native_for_Mobile_Development-sample-pdf.acsm?id=0DidDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=0DidDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book reveals the the path-breaking concepts of React.js and acquaints you with the React way of thinking so you can learn to create stunning user interfaces."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "xAg7DwAAQBAJ",
+        "etag": "JxnTpEqzMDU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/xAg7DwAAQBAJ",
+        "volumeInfo": {
+          "title": "Learning React Native",
+          "subtitle": "Building Native Mobile Apps with JavaScript",
+          "authors": [
+            "Bonnie Eisenman"
+          ],
+          "publisher": "\"O'Reilly Media, Inc.\"",
+          "publishedDate": "2017-10-23",
+          "description": "Get a practical introduction to React Native, the JavaScript framework for writing and deploying fully featured mobile apps that render natively. The second edition of this hands-on guide shows you how to build applications that target iOS, Android, and other mobile platforms instead of browsers—apps that can access platform features such as the camera, user location, and local storage. Through code examples and step-by-step instructions, web developers and frontend engineers familiar with React will learn how to build and style interfaces, use mobile components, and debug and deploy apps. You’ll learn how to extend React Native using third-party libraries or your own Java and Objective-C libraries. Understand how React Native works under the hood with native UI components Examine how React Native’s mobile-based components compare to basic HTML elements Create and style your own React Native components and applications Take advantage of platform-specific APIs, as well as modules from the framework’s community Incorporate platform-specific components into cross-platform apps Learn common pitfalls of React Native development, and tools for dealing with them Combine a large application’s many screens into a cohesive UX Handle state management in a large app with the Redux library",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781491989098"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1491989092"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 242,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "averageRating": 4,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.1.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=xAg7DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=xAg7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=xAg7DwAAQBAJ&printsec=frontcover&dq=react+native&hl=&cd=2&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=xAg7DwAAQBAJ&dq=react+native&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Learning_React_Native.html?hl=&id=xAg7DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "BG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "BG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=xAg7DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The second edition of this hands-on guide shows you how to build applications that target iOS, Android, and other mobile platforms instead of browsers—apps that can access platform features such as the camera, user location, and local ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "hEFPDwAAQBAJ",
+        "etag": "PS5rytUbb14",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/hEFPDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React Native Blueprints",
+          "subtitle": "Create eight exciting native cross-platform mobile applications with JavaScript",
+          "authors": [
+            "Emilio Rodriguez Martinez"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2017-11-08",
+          "description": "Develop real world Android and iOS applications with the power of React native. About This Book Build quirky and fun projects from scratch and become efficient with React Native Learn to build professional Android and iOS applications with your JavaScript skills Use Isomorphic principles to build mobile apps that offer a native user experience Who This Book Is For This book is for developers who want to use their JavaScript knowledge for mobile development. Prior knowledge of React will be beneficial. What You Will Learn Structure React Native projects to ease maintenance and extensibility Optimize a project to speed up development Make a React Native project production-ready Use external modules to speed up the development and maintenance of your projects Explore the different UI and code patterns to be used for iOS and Android Get to know the best practices when building apps in React Native In Detail Considering the success of the React framework, Facebook recently introduced a new mobile development framework called React Native. With React Native's game-changing approach to hybrid mobile development, you can build native mobile applications that are much more powerful, interactive, and faster by using JavaScript This project-based guide takes you through eight projects to help you gain a sound understanding of the framework and helps you build mobile apps with native user experience. Starting with a simple standalone groceries list app, you will progressively move on to building advanced apps by adding connectivity with external APIs, using native features, such as the camera or microphone, in the mobile device, integrating with state management libraries such as Redux or MobX, or leveraging React Native's performance by building a full-featured game. This book covers the entire feature set of React Native, starting from the simplest (layout or navigation libraries) to the most advanced (integration with native code) features. By the end of this book, you'll be able to build professional Android and iOS applications using React Native. Style and approach This project-based guide consists of 8 projects. Each project is a standalone project that covers the core techniques and concepts in each project.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781787287020"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1787287025"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 346,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.3.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=hEFPDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=hEFPDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=hEFPDwAAQBAJ&printsec=frontcover&dq=react+native&hl=&cd=3&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=hEFPDwAAQBAJ&dq=react+native&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/React_Native_Blueprints.html?hl=&id=hEFPDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "BG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "BG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=hEFPDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "By the end of this book, you&#39;ll be able to build professional Android and iOS applications using React Native. Style and approach This project-based guide consists of 8 projects."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "HXk6wQEACAAJ",
+        "etag": "1JFk0e/f0Lw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/HXk6wQEACAAJ",
+        "volumeInfo": {
+          "title": "Fullstack React Native",
+          "subtitle": "Create Beautiful Mobile Apps with JavaScript and React Native",
+          "authors": [
+            "Houssein Djirdeh"
+          ],
+          "publisher": "Independently Published",
+          "publishedDate": "2019-01-11",
+          "description": "Master React Native with Fullstack React Native The up-to-date, in-depth, complete guide to React Native. Create beautiful mobile apps with JavaScript and React Deliver high quality mobile apps, at light speed. Building the same app in both Swift and Java is time-consuming. With React Native, you can release a native app on both iOS and Android from a single codebase. Do you or your team already know JavaScript? Leverage your existing knowledge to build world class mobile applications. The React Native ecosystem is evolving fast. Get started on the right foot. With such an active community and so many updates, it feels impossible to know what's best and what's just noise. We cover the latest React Native version and best practices so you can develop with confidence. What You'll Build When you buy Fullstack React Native, you're not buying just a book, but dozens of code examples. Every chapter in the book comes with a complete project that uses the concepts in the chapter and provides support for both iOS (including iPhone X screens) & Android. A Weather App - Get your feet wet with React Native by building a weather app allows the user to input their location and grabs weather data from a third party API. A Time Tracker - Brush up on your core React knowledge and build a time tracking app. A Messaging App - Understand how to use the core React Native APIs like Geolocation, CameraRoll, Keyboard, NetInfo and much more through completing a messaging app An Instagram Clone - Learn how to style your app, manage user input, add comments and display photos from Unsplash A Contacts App - Learn how to use Navigation: a major piece of any mobile application with multiple screens A Puzzle Game - Learn how to achieve smooth animations that render at 60 frames-per-second (fps) FAQHow long is the book? The book has 11 chapters totaling 670 pages, several sample apps totaling over 1000+ lines of code (JavaScript/JSX, non-comment lines). Do I have to know React? Nope! We've written the book so that it can be used even if you aren't familiar with React. Although, if you'd like to learn React in depth, checkout our other book Fullstack React Do I have to know JavaScript? Yes, we assume you know the basics of the language. But you don't need to be completely up-to-date: we teach the latest language features in case you're not familiar with them. However, this book teaches React Native from the ground up and you can use it even if you've never written a mobile app before.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1728995558"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781728995557"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 690,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=HXk6wQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=HXk6wQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=HXk6wQEACAAJ&dq=react+native&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=HXk6wQEACAAJ&dq=react+native&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Fullstack_React_Native.html?hl=&id=HXk6wQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "BG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "BG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=HXk6wQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "However, this book teaches React Native from the ground up and you can use it even if you&#39;ve never written a mobile app before."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "e_l9zQEACAAJ",
+        "etag": "gQQLrcYqm+g",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/e_l9zQEACAAJ",
+        "volumeInfo": {
+          "title": "React and React Native",
+          "subtitle": "A Complete Hands-on Guide to Modern Web and Mobile Development with React.js",
+          "authors": [
+            "Adam Boduch",
+            "Roy Derks"
+          ],
+          "publishedDate": "2020-04-29",
+          "description": "Discover and learn how to use React and React Native to build mobile, desktop and web apps. From composable and Native UIs through to device-specific APIs and offline development, this book has everything you need to create engaging and user-friendly React applications which run on all major platforms.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1839211148"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781839211140"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 526,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=e_l9zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=e_l9zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=e_l9zQEACAAJ&dq=react+native&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=e_l9zQEACAAJ&dq=react+native&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/React_and_React_Native.html?hl=&id=e_l9zQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "BG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "BG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=e_l9zQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "From composable and Native UIs through to device-specific APIs and offline development, this book has everything you need to create engaging and user-friendly React applications which run on all major platforms."
+        }
+      }
+    ]
+  }

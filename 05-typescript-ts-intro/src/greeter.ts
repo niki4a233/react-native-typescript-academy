@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-function greeter(name: string, date: Date= new Date()):string{
-    return `Hello ${name} from Typescript on ${date.toDateString()}`;
-}
-document.getElementById(`results`,)!.innerHTML = greeter('Traqn');
+// function greeter(name: string, date: Date= new Date()):string{
+//     return `Hello ${name} from Typescript on ${date.toDateString()}`;
+// }
+// document.getElementById(`results`,)!.innerHTML = greeter('Traqn');
 
 // const elem = document.getElementById(`results`);
 // if (elem != null){
@@ -65,5 +65,6 @@ function isFish(pet: Fish | Bird): pet is Fish {
     
     return Math.random() < 0.5 ? {swim() {return}} as Fish :{ fly() { return; } } as Bird}
     const pet = getSmallPet();
+
     
   

@@ -1,31 +1,23 @@
-import { ValidationConfig, ValidationResult, Validators } from "./validate";
-import { AppStateStore } from "./state-store.js";
-import { BlogsAPI } from "./blogs-api-client.js";
-import { Post } from "./posts.js";
-import { IdType } from "./shared-types.js";
+import { ValidationConfig, ValidationResult, FormFieldState, ValidStatus, ChangedStatus } from './validate';
+import { AppStateStore } from './state-store.js';
+import { BlogsAPI } from './blogs-api-client.js';
+import { User } from './posts.js';
+import { FormFieldDict, IdType } from './shared-types.js';
 
-// interface BlogControllerType {
-//   postsSection: HTMLElement;
-//   erorrsDiv: HTMLElement;
-//   addPostForm: HTMLFormElement;
-//   resetButton: HTMLButtonElement;
-//   init(): Promise<void>;
-// }
+
+
+
 
 class BlogsController {
   postsSection = document.getElementById("posts")!;
   erorrsDiv = document.getElementById("errors")!;
-  protected addPostForm = document.getElementById(
-    "add-post-form"
-  )! as HTMLFormElement;
-  resetButton = document.getElementById(
-    "form-reset-button"
-  )! as HTMLButtonElement;
+  protected addPostForm = document.getElementById("add-post-form")! as HTMLFormElement;
+  resetButton = document.getElementById("form-reset-button")! as HTMLButtonElement;
 
   async init() {
-    this.addPostForm.addEventListener("submit", this.handleSubmitPost);
-    this.resetButton.addEventListener("click", this.resetForm);
-    this.addPostForm.addEventListener("change", this.validateForm, true);
+    this.addPostForm.addEventListener('submit', this.handleSubmitPost);
+    this.resetButton.addEventListener('click', this.resetForm);
+    this.addPostForm.addEventListener('change', this.validateForm, true);
 
     try {
       const allPosts = await BlogsAPI.getAllPosts();
@@ -34,10 +26,20 @@ class BlogsController {
     } catch (err) {
       this.showError(err);
     }
+
+    this.initFormState(this.addPostForm);
+  }
+
+  initFormState(formElement: HTMLFormElement) {
+    const formData = new FormData(formElement);
+    const np: FormFieldDict<FormFieldState> = {};
+    formData.forEach((value, key) => {
+      np[key] = new FormFieldState(ValidStatus.INVALID, ChangedStatus.PRISTINE);
+    })
   }
 
   showPosts(posts: Post[]) {
-    posts.forEach((post) => this.addPostDOM(post));
+    posts.forEach(post => this.addPostDOM(post));
   }
 
   showError(err: any) {
@@ -45,8 +47,8 @@ class BlogsController {
   }
 
   addPostDOM(post: Post) {
-    const postElem = document.createElement("article");
-    postElem.setAttribute("id", post.id!.toString());
+    const postElem = document.createElement('article');
+    postElem.setAttribute('id', post.id!.toString());
     postElem.className = "col s12 m6 l4";
     this.updateArticleInnerHtml(postElem, post);
     this.postsSection.insertAdjacentElement("beforeend", postElem);
@@ -64,39 +66,25 @@ class BlogsController {
         <img class="activator" src="${post.imageUrl}">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">${
-          post.title
-        }<i class="material-icons right">more_vert</i></span>
-        <p>Author: ${post.authorId}, Tags: ${
-      post.tags ? post.tags.join(", ") : "no tags"
-    }</p>
+        <span class="card-title activator grey-text text-darken-4">${post.title}<i class="material-icons right">more_vert</i></span>
+        <p>Author: ${post.authorId}, Tags: ${post.tags ? post.tags.join(', ') : 'no tags'}</p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">${
-          post.title
-        }<i class="material-icons right">close</i></span>
+        <span class="card-title grey-text text-darken-4">${post.title}<i class="material-icons right">close</i></span>
         <p>${post.content}</p>
       </div>
       <div class="card-action">
-        <button class="btn waves-effect waves-light" type="button" id="edit${
-          post.id
-        }">Edit
+        <button class="btn waves-effect waves-light" type="button" id="edit${post.id}">Edit
           <i class="material-icons right">send</i>
         </button>
-        <button class="btn waves-effect waves-light red lighten-1" type="button" id="delete${
-          post.id
-        }">Delete
+        <button class="btn waves-effect waves-light red lighten-1" type="button" id="delete${post.id}">Delete
           <i class="material-icons right">clear</i>
         </button>
       </div>
       </div>
       `;
-    postElem
-      .querySelector(`#delete${post.id}`)!
-      .addEventListener("click", (event) => this.deletePost(post.id!));
-    postElem
-      .querySelector(`#edit${post.id}`)!
-      .addEventListener("click", (event) => this.editPost(post));
+    postElem.querySelector(`#delete${post.id}`)!.addEventListener('click', event => this.deletePost(post.id!))
+    postElem.querySelector(`#edit${post.id}`)!.addEventListener('click', event => this.editPost(post))
   }
 
   editPost(post: Post) {
@@ -109,14 +97,13 @@ class BlogsController {
     let field: keyof Post;
     for (field in post) {
       (document.getElementById(field) as HTMLFormElement).value = post[field];
-      const label = document.querySelector(
-        `#add-post-form label[for=${field}]`
-      );
+      const label = document.querySelector(`#add-post-form label[for=${field}]`);
       if (label) {
-        label.className = "active";
+        label.className = 'active';
       }
     }
   }
+
 
   handleSubmitPost = async (event: SubmitEvent) => {
     try {
@@ -135,25 +122,15 @@ class BlogsController {
     } catch (err) {
       this.showError(err);
     }
-  };
+  }
 
   getPostFormSnapshot(): Post {
     const formData = new FormData(this.addPostForm);
-    type PostDict = {
-      [key: string]: string;
-    };
-    const np: PostDict = {};
+    const np: FormFieldDict<string> = {};
     formData.forEach((value, key) => {
       np[key] = value.toString();
-    });
-    return new Post(
-      np.title,
-      np.content,
-      np.tags.split(/\W+/),
-      np.imageUrl,
-      parseInt(np.authorId) || 1,
-      parseInt(np.id)
-    );
+    })
+    return new Post(np.title, np.content, np.tags.split(/\W+/), np.imageUrl, np.authorId ? parseInt(np.authorId): undefined , parseInt(np.id));
   }
 
   resetForm = () => {
@@ -162,7 +139,7 @@ class BlogsController {
     } else {
       this.addPostForm.reset();
     }
-  };
+  }
 
   async deletePost(postId: IdType) {
     try {
@@ -180,31 +157,17 @@ class BlogsController {
     let field: keyof ValidationConfig<Post>;
     for (field in config) {
       const validator = config[field];
-      if (validator !== undefined) {
-        if (Array.isArray(validator)) {
-          for (const v of validator) {
-            try {
-              v(formSnapshot[field]!.toString(), field);
-            } catch (err) {
-              validationResult[field] = [err as string];
-            }
-          }
-        } else {
-          try {
-            validator(formSnapshot[field]!.toString(), field);
-          } catch (err) {
-            validationResult[field] = [err as string];
-          }
+      if(validator !== undefined) {
+        try{
+          const fieldValue = formSnapshot[field]
+          validator(fieldValue? fieldValue.toString(): '', field);
+        } catch(err) {
+          validationResult[field] = [err as string];
         }
       }
     }
-
     this.showValidationErrors(validationResult);
-  };
-
-
-
-
+  }
 
   showValidationErrors(validationResult: ValidationResult<Post>) {
     AppStateStore.postFormErrors = [];
@@ -213,9 +176,7 @@ class BlogsController {
       const filedErrors = validationResult[field];
       if (filedErrors !== undefined) {
         for (const err of filedErrors) {
-
           AppStateStore.postFormErrors.push(`${field} -> ${err}<br>`);
-          
         }
       }
     }
@@ -226,13 +187,3 @@ class BlogsController {
 const blogsController = new BlogsController();
 
 blogsController.init();
-
-function validationResult(validationResult: any) {
-  throw new Error("Function not implemented.");
-}
-function showValidationErrors(
-  validationResult: (validationResult: any) => void,
-  arg1: any
-) {
-  throw new Error("Function not implemented.");
-}
